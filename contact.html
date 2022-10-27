@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Michael's Blog</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--This is how we are creating a navigation bar at the top of the page-->
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">TNVMMHCLLC</a>
+
+            <div class="navbar__toggle" id="mobile-menu">
+                <!--This is the javascript that will be targeted-->
+                <span class="bar"></span> <!--The literal bars in the top right corner of the screen that will create the X when the window size changes-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+
+                <li class="navbar__item">
+                    <a href="home.html" class="navbar__links">Home</a>
+
+                </li>
+
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+
+                </li>
+
+                <li class="navbar__item">
+                    <a href="articles.html" class="navbar__links">Articles</a>
+
+                </li>
+                <li class="navbar__item">
+                    <a href="videos.html" class="navbar__links">Videos</a>
+
+                </li>
+                <li class="navbar__btn">
+                    <a href="contact.html" class="button">Contact me!</a>
+
+                </li>
+
+            </ul>
+        </div>
+        <script src="js/app.js"></script>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Contact Me!</h1>
+        <form class="row g-3" action="https://formsubmit.co/contactmepagedemo@gmail.com" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="https://contactmepagedemo.github.io/formsubmitdemo/success.html" >
+
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="name" id="firstName" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+          </div>
+          <div class="col-md-8">
+            <label for="emailInfo" class="form-label">E-mail</label>
+            <input type="email" class="form-control" name="email" id="emailInfo" required>
+          </div>
+          <div class="col-md-4">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
+          </div>
+          <div class="col-md-12">
+            <label for="comments" class="form-label">Comments, questions?</label>
+            <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
